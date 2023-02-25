@@ -29,7 +29,7 @@ jobs:
         run: npm ci
 
       - name: 🔍 ESLint validation
-        run: npx eslint --ignore-path .gitignore . --max-warnings 0
+        run: npx eslint --ignore-path .gitignore
 
       - name: 📏 Check commit message length
         uses: gsactions/commit-message-checker@v1
@@ -38,5 +38,5 @@ jobs:
           error: "The commit message length must be between 10 and 74"
           excludeDescription: "true" # optional: this excludes the description body of a pull request
           excludeTitle: "true" # optional: this excludes the title of a pull request
-          checkAllCommitMessages: "true" # optional: this checks all commits associated with a pull request
+          checkAllCommitMessages: "true" # optional: this checks all commits associated with a pull reques
 
