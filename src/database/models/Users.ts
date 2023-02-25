@@ -30,6 +30,6 @@ const userSchema = new mongoose.Schema({
   circuit: { type: String, required: true },
 });
 
-const User = mongoose.model("User", userSchema);
+const User = mongoose.model("User", userSchema, "SimRacers");
 
 export default User;
