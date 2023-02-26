@@ -1,3 +1,4 @@
+import "../loadEnvironment.js";
 import createDebug from "debug";
 import mongoose from "mongoose";
 
